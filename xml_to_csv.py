@@ -8,7 +8,7 @@ column_names = ['filename', 'width', 'height', 'class', 'xmin', 'ymin', 'xmax', 
 
 def get_arguments():
     parser = argparse.ArgumentParser(description="XML to CSV converter for image annotations")
-    parser.add_argument('-i', help="Path to the input directory where all XMLs should be extracted from", metavar='<input_folder>')
+    parser.add_argument('-i', help="Path to the input directory containing all XML labels", metavar='<input_folder>')
     parser.add_argument('-o', help="CSV file you wish to be generated", metavar='<output_folder>')
 
     args = parser.parse_args()
